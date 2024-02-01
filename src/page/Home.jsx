@@ -21,7 +21,7 @@ const Home = () => {
                             products.map((each, index) => (
                                 <div key={index} >
                                     <div style={{ width: "100%" }}>
-                                        <img src={each} style={{ objectFit: "cover", width: "100%", height: "20rem" }} alt="Slide Image" />
+                                        <img src={each} style={{ objectFit: "cover", width: "100%", height: "20rem" }} alt="Slide" />
                                     </div>
                                     <button className="btn" onClick={() => navigate("/category/rent")}>
                                         FOR RENT
@@ -37,7 +37,7 @@ const Home = () => {
                             product2.map((each, index) => (
                                 <div key={index} >
                                     <div style={{ width: "100%" }}>
-                                        <img src={each} style={{ objectFit: "cover", width: "100%", height: "20rem" }} alt="Slide Image" />
+                                        <img src={each} style={{ objectFit: "cover", width: "100%", height: "20rem" }} alt="Slide" />
                                     </div>
                                     <button className="btn" onClick={() => navigate("/category/sale")}>
                                         FOR SALE

@@ -439,7 +439,7 @@ const CreateListing = () => {
                             name="images"
                             onChange={onChangeHandler}
                             max="6"
-                            accept=".jpg,.png,.jpeg"
+                            
                             multiple
                             required
                         />

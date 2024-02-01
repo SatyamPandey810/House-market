@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Layout from '../components/layout/Layout';
 import { Link, useNavigate } from 'react-router-dom';
-import { getAuth, sendPasswordResetEmail, updateProfile } from "firebase/auth";
+import { getAuth, sendPasswordResetEmail} from "firebase/auth";
 import { toast } from 'react-toastify';
 import "../styles/forgotpassword.css";
 

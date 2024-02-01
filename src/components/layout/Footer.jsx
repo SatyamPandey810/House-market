@@ -10,7 +10,7 @@ const Footer = () => {
                 <h3>
                     Made With
                     <img
-                        src="./assets/love.gif"
+                        src="/../assets/love.gif"
                         alt="love"
                         height={60}
                         width={80}

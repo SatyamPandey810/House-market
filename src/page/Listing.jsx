@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "../styles/listing.css";
 import Layout from '../components/layout/Layout';
-import { Link, useNavigate, useParams } from 'react-router-dom';
-import { getAuth } from 'firebase/auth';
+import { Link,  useParams } from 'react-router-dom';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase.config';
 import { PiCurrencyInrBold } from "react-icons/pi";
@@ -10,12 +9,10 @@ import { FaBed, FaBath, FaParking, FaHouseDamage, FaArrowCircleRight } from "rea
 import Spinner from '../components/Spinner';
 
 const Listing = () => {
-    const navigate = useNavigate();
     const [listing, setListing] = useState('');
     const [loading, setLoading] = useState(false)
     const params = useParams()
 
-    const auth = getAuth();
 
     useEffect(() => {
         const fetchListing = async () => {

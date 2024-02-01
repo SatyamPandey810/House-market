@@ -14,7 +14,7 @@ const EditListing = () => {
     const params = useParams();
     const [loading, setLoading] = useState(false);
     const [listing, setLisitng] = useState(null);
-    const [geoLoactionEnable, setGeoLocationEnable] = useState(false); // eslint-disable-line
+    const [geoLoactionEnable, setGeoLocationEnable] = useState(false); 
     const [formData, setFormData] = useState({
         type: "rent",
         name: "",
@@ -36,7 +36,6 @@ const EditListing = () => {
         name,
         bedrooms,
         bathrooms,
-
         parking,
         furnished,
         address,
